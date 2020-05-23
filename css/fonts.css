@@ -11,3 +11,8 @@
     src: url("../Roboto/Roboto-Light.ttf");
 }
 
+/* font-family: Roboto-Bold */
+@font-face {
+    font-family: Bold;
+    src: url("../Roboto/Roboto-Bold.ttf");
+}

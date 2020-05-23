@@ -8,12 +8,19 @@ html,body{
 
 :root{
 
-    /* Theme colors */
+    /* Theme Colors */
     --text-grey: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --midnight: #104f55;
+
+    /* Gradient Color */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /* Theme font-family */
     --Light: 'Light', cursive;
     --Thin: 'Thin', cursive;
+    --Bold: 'Bold', cursive;
 }
 
 /* ------------- Global Classes ---------------- */
@@ -61,6 +68,16 @@ ul{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
+    font-family: var(--Light);
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav, .nav-items,.nav-link:hover a{
+    color:white;
 }
 
 
@@ -68,7 +85,8 @@ ul{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Light);
+    font-family: var(--Bold);
+    font-size: 1.6rem;
 }
 
 .nav, .social{
