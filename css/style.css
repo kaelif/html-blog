@@ -15,13 +15,19 @@ a{
 .flex-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
+ul{
+    list-style-type: none;
+}
+
 
 
 /* ------------- Global Classes ---------------- */
 
 
-/* ------------- navbar --------------- */
+/* ------------- Navigation Bar --------------- */
 
 .nav{
     background: white;
@@ -31,11 +37,33 @@ a{
     overflow: hidden;
 }
 
-.nav.nav-brand a{
-    font-size: 1.6rem;
-    padding: 1rem 0;
+.nav, .nav-menu{
+    justify-content: space-between;
+}
 
+.nav, .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav, .nav-items, .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
 }
 
 
-/* ------X------- navbar --------X------- */
+.nav, .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.nav, .social{
+    padding: 1.4rem 0;
+}
+
+
+
+
+/* ------X------- Navigation Bar --------X------- */
