@@ -21,6 +21,7 @@ html,body{
     --Light: 'Light', cursive;
     --Thin: 'Thin', cursive;
     --Bold: 'Bold', cursive;
+    --Black: 'Black', cursive;
 }
 
 /* ------------- Global Classes ---------------- */
@@ -40,9 +41,31 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Black);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var('Black');
+}
+
+h3{
+    font-family: var(--Thin);
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Bold);
+    cursor: pointer;
+}
 
 
-/* ------------- Global Classes ---------------- */
+
+/* ------X------- Global Classes ---------X------- */
 
 
 /* ------------- Navigation Bar --------------- */
@@ -132,10 +155,57 @@ ul{
 
 /* ------X------- Navigation Bar --------X------- */
 
+
+/*---------------- Main Content ---------------- */
+
+    /* ---------- Site Title ------------ */
+    main .site-title{
+        background: url('../assets/half-dome.jpg');
+        background-size: cover;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    main .site-title .site-background{
+        padding-top: 10rem;
+        text-align: center;
+        color: black;
+    }
+
+    main .site-title h1, h3{
+        margin: .3rem;
+    }
+
+    main .site-title .btn{
+        margin: 1.8rem;
+        background: var(--sky);
+    }
+
+    main .site-title .btn:hover{
+        background: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
+    }
+
+    main .site-title .btn:hover{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    /* -----X----- Site Title ------X------ */
+
+
+/*-------X--------- Main Content --------X-------- */
+
+
+
 /*            Viewport less then or equal to 750px           */
 
 @media only screen and (max-width: 750px){
-    .nav, .nav-menu {
+    .nav .nav-menu {
         flex-direction: column;
     }
 
