@@ -51,12 +51,25 @@ ul{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 40vh;
+    min-height: 10vh;
     overflow: hidden;
 }
 
 .nav, .nav-menu{
     justify-content: space-between;
+}
+
+.nav, toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav, .toggle-collapse, .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
 }
 
 .nav, .nav-items{
@@ -104,3 +117,14 @@ ul{
 
 
 /* ------X------- Navigation Bar --------X------- */
+
+/*            Viewport less then or equal to 750px           */
+
+@media only screen and (max-width: 750px){
+    .nav, .nav-menu {
+        flex-direction: column;
+    }
+}
+
+
+/*      X      Viewport less then or equal to 750px     X      */
