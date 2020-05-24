@@ -160,7 +160,7 @@ button.btn{
 
     /* ---------- Site Title ------------ */
     main .site-title{
-        background: url('../assets/half-dome.jpg');
+        background: url('../assets/Background-image.png');
         background-size: cover;
         height: 110vh;
         display: flex;
@@ -171,7 +171,7 @@ button.btn{
     main .site-title .site-background{
         padding-top: 10rem;
         text-align: center;
-        color: black;
+        color: white;
     }
 
     main .site-title h1, h3{
@@ -196,6 +196,20 @@ button.btn{
     }
 
     /* -----X----- Site Title ------X------ */
+
+
+/* --------------------- Blog Carousel ---------------------- */
+
+main .blog{
+    background: url("../assets/Background-image-2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+/* --------------------- Blog Carousel ---------------------- */
 
 
 /*-------X--------- Main Content --------X-------- */
