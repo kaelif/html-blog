@@ -1,6 +1,6 @@
 @import url("./fonts.css");
 
-html,body{
+html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow: hidden;
@@ -10,6 +10,7 @@ html,body{
 
     /* Theme Colors */
     --text-grey: #3f4954;
+    --text-light: #686666da;
     --text-light: #686666da;
     --bg-color: #0f0f0f;
     --midnight: #104f55;
@@ -79,11 +80,11 @@ button.btn{
     transition: height 1s ease-in-out;
 }
 
-.nav, .nav-menu{
+.nav .nav-menu{
     justify-content: space-between;
 }
 
-.nav, toggle-collapse{
+.nav toggle-collapse{
     position: absolute;
     top: 0%;
     width: 90%;
@@ -91,16 +92,13 @@ button.btn{
     display: none;
 }
 
-.nav, .toggle-collapse, .toggle-icons{
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
 }
 
-.nav, .toggle-icons{
-    display: flex;
-}
-
-.nav, .toggle-collapse, .toggle-icons i{
+.nav .toggle-collapse .toggle-icons i{
     font-size:1.4rem;
     color: var(--text-grey);
 }
@@ -109,12 +107,12 @@ button.btn{
     height: 30rem;
 }
 
-.nav, .nav-items{
+.nav .nav-items{
     display: flex;
     margin: 0;
 }
 
-.nav, .nav-items, .nav-link{
+.nav .nav-items .nav-link{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
@@ -122,16 +120,16 @@ button.btn{
     font-size: 1.1rem;
 }
 
-.nav-link:hover{
+.nav .nav-items .nav-link:hover{
     background-color: var(--midnight);
 }
 
-.nav, .nav-items,.nav-link:hover a{
+.nav .nav-items .nav-link:hover a{
     color:white;
 }
 
 
-.nav, .nav-brand a{
+.nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
@@ -185,14 +183,8 @@ button.btn{
 
     main .site-title .btn:hover{
         background: transparent;
-        border: 1px solid var(--white);
-        color: var(--white);
-    }
-
-    main .site-title .btn:hover{
-        background: transparent;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid var(white);
+        color: var(white);
     }
 
     /* -----X----- Site Title ------X------ */
@@ -201,13 +193,24 @@ button.btn{
 /* --------------------- Blog Carousel ---------------------- */
 
 main .blog{
-    background: url("../assets/Background-image-2.png");
+    background: url("../assets/Abract01.png");
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
     width: 100%;
     background-size: 65%;
 }
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+
+
+
+
+
+
 
 /* --------------------- Blog Carousel ---------------------- */
 
