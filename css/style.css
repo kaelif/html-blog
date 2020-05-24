@@ -450,6 +450,14 @@ footer.footer.container{
     grid-template-columns: repeat(3, 1fr);
 }
 
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+
+
 
 /* ----------------- Footer ---------------- */
 
