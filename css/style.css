@@ -418,6 +418,18 @@ main .site-content .post-content .post-title .post-btn{
     background: var(--sky);
 }
 
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+
+}
+
 
 /* ------------------- Sidebar ----------------------- */
 
