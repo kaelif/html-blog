@@ -437,6 +437,22 @@ main .site-content .post-content .post-title .post-btn{
 /*-------X--------- Main Content --------X-------- */
 
 
+/* ----------------- Footer ---------------- */
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ----------------- Footer ---------------- */
+
 
 /*            Viewport less then or equal to 750px           */
 
