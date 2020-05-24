@@ -9,10 +9,10 @@ html, body{
 :root{
 
     /* Theme Colors */
-    --text-grey: #3f4954;
-    --text-light: #686666da;
-    --text-light: #686666da;
+    --text-gray: #3f4954;
+    --text-light : #686666da;
     --bg-color: #0f0f0f;
+    --white: #ffffff;
     --midnight: #104f55;
 
     /* Gradient Color */
@@ -53,6 +53,7 @@ h2{
 
 h3{
     font-family: var(--Thin);
+    font-size: 1.3rem;
 }
 
 button.btn{
@@ -62,6 +63,23 @@ button.btn{
     font-size: 1rem;
     font-family: var(--Bold);
     cursor: pointer;
+}
+
+span{
+    font-family: var(--Thin);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Light);
+    color: var(--Thin);
 }
 
 
@@ -84,7 +102,7 @@ button.btn{
     justify-content: space-between;
 }
 
-.nav toggle-collapse{
+.nav .toggle-collapse{
     position: absolute;
     top: 0%;
     width: 90%;
@@ -125,7 +143,7 @@ button.btn{
 }
 
 .nav .nav-items .nav-link:hover a{
-    color:white;
+    color:var(--white);
 }
 
 
@@ -146,7 +164,7 @@ button.btn{
 }
 
 .nav, .social i:hover{
-    color: #a1c4cf
+    color: #a1c4cf;
 }
 
 
@@ -169,7 +187,7 @@ button.btn{
     main .site-title .site-background{
         padding-top: 10rem;
         text-align: center;
-        color: white;
+        color: var(--white);
     }
 
     main .site-title h1, h3{
@@ -193,7 +211,7 @@ button.btn{
 /* --------------------- Blog Carousel ---------------------- */
 
 main .blog{
-    background: url("../assets/Abract01.png");
+    background: url('../assets/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -206,13 +224,73 @@ main .blog .blog-post{
 }
 
 
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rbga(0, 0, 0, 0.2);
+
+}
+
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
 
 
 
+/* ------X--------------- Blog Carousel -----------X----------- */
 
 
+/* ------------------- Site Content ----------------- */
 
-/* --------------------- Blog Carousel ---------------------- */
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    margin-bottom: 5rem;
+}
+
+
+/* ------------------- Site Content ----------------- */
 
 
 /*-------X--------- Main Content --------X-------- */
