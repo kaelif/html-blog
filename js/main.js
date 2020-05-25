@@ -1,4 +1,3 @@
-
 const responsive = {
     0: {
         items: 1
@@ -13,6 +12,7 @@ const responsive = {
         items: 3
     }
 }
+
 $(document).ready(function(){
 
     $nav = $(".nav");
@@ -24,13 +24,13 @@ $(document).ready(function(){
     })
 
     // Owl-carousel for blog
-    $("owl-carousel").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         loop: true,
         autoplay: false,
         autoplayTimeout: 3000,
         dots: false,
         nav: true,
-        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: responsive
     });
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
     $('.move-up span').click(function(){
         $('html, body').animate({
             scrollTop: 0
-        }, 2000)
+        }, 1000)
     })
 
     // AOS Instance
