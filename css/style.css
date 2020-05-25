@@ -1,4 +1,5 @@
-@import url("./fonts.css");
+@import url('./css/fonts.css');
+
 
 html, body{
     margin: 0%;
@@ -8,24 +9,25 @@ html, body{
 
 :root{
 
-    /* Theme Colors */
+    /*      Theme colors        */
     --text-gray: #3f4954;
     --text-light : #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #104f55;
 
-    /* Gradient Color */
+    /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
-    /* Theme font-family */
-    --Light: 'Light', cursive;
+    /*      theme font-family   */
     --Thin: 'Thin', cursive;
+    --Light: 'Light', cursive;
     --Bold: 'Bold', cursive;
     --Black: 'Black', cursive;
 }
 
-/* ------------- Global Classes ---------------- */
+
+/* ---------------- Global Classes ---------------*/
 
 a{
     text-decoration: none;
@@ -34,7 +36,7 @@ a{
 
 .flex-row{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     flex-wrap: wrap;
 }
 
@@ -43,12 +45,12 @@ ul{
 }
 
 h1{
-    font-family: var(--Black);
+    font-family: var(--Light);
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: var('Black'); 
+    font-family: var(--Light);
 }
 
 h3{
@@ -61,12 +63,12 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: var(--Bold);
+    font-family: var(--Light);
     cursor: pointer;
 }
 
 span{
-    font-family: var(--Thin);
+    font-family: var(--Light);
 }
 
 .container{
@@ -82,12 +84,9 @@ p{
     color: var(--text-light);
 }
 
+/* ------x------- Global Classes -------x-------*/
 
-
-/* ------X------- Global Classes ---------X------- */
-
-
-/* ------------- Navigation Bar --------------- */
+/* --------------- navbar ----------------- */
 
 .nav{
     background: white;
@@ -98,7 +97,7 @@ p{
     transition: height 1s ease-in-out;
 }
 
-.nav .nav-menu{
+.nav .nav-menu{    
     justify-content: space-between;
 }
 
@@ -134,7 +133,7 @@ p{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
-    font-family: var(--Light);
+    font-family: var(--Abel);
     font-size: 1.1rem;
 }
 
@@ -146,17 +145,16 @@ p{
     color: var(--white);
 }
 
-
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Bold);
+    font-family: var(--Light);
     font-size: 1.6rem;
 }
 
 .nav .social{
-    padding: 1.4rem 0;
+    padding: 1.4rem 0
 }
 
 .nav .social i{
@@ -167,13 +165,12 @@ p{
     color: #a1c4cf;
 }
 
+/* -------x------- navbar ---------x------- */
 
-/* ------X------- Navigation Bar --------X------- */
 
+/* ----------------- Main Content----------- */
 
-/*---------------- Main Content ---------------- */
-
-    /* ---------- Site Title ------------ */
+/* --------------- Site title ---------------- */
 main .site-title{
     background: url('../assets/Background-image.png');
     background-size: cover;
@@ -203,10 +200,9 @@ main .site-title .btn:hover{
     color: var(--white);
 }
 
-/* -----X----- Site Title ------X------ */
+/* --------x------ Site title --------x------- */
 
-
-/* --------------------- Blog Carousel ---------------------- */
+/* --------------- Blog Carousel ------------ */
 
 main .blog{
     background: url('../assets/Abract01.png');
@@ -221,7 +217,6 @@ main .blog .blog-post{
     padding-top: 6rem;
 }
 
-
 main .blog-post .blog-content{
     display: flex;
     flex-direction: column;
@@ -229,9 +224,7 @@ main .blog-post .blog-content{
     width: 80%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-
 }
-
 
 main .blog-content .blog-title{
     padding: 2rem 0;
@@ -271,12 +264,9 @@ section .container .owl-nav{
 }
 
 
+/* -------x------- Blog Carousel -----x------ */
 
-/* ------X--------------- Blog Carousel -----------X----------- */
-
-
-/* ------------------- Site Content ----------------- */
-
+/* ---------------- Site Content ----------------*/
 
 main .site-content{
     display: grid;
@@ -285,9 +275,10 @@ main .site-content{
 
 main .post-content{
     width: 100%;
+    
 }
 
-main .site-content .post-content >  .post-image .post-title{
+main .site-content .post-content > .post-image, .post-title{
     padding: 1rem 2rem;
     position: relative;
 }
@@ -310,7 +301,6 @@ main .site-content .post-content > .post-image .img{
     transition: all 1s ease;
 }
 
-
 main .site-content .post-content > .post-image .img:hover{
     transform: scale(1.3);
 }
@@ -320,7 +310,7 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Light);
+    font-family: var(--Bold);
     font-size: 1.5rem;
 }
 
@@ -330,7 +320,7 @@ main .post-content .post-title a{
     background: var(--sky);
 }
 
-.site-content pagination{
+.site-content .pagination{
     justify-content: center;
     color: var(--text-gray);
     margin: 4rem 0;
@@ -348,14 +338,13 @@ main .post-content .post-title a{
     color: var(--white);
 }
 
+/* -------x-------- Site Content --------x-------*/
 
-/* ------------------- Site Content ----------------- */
 
-
-/* ------------------- Sidebar ----------------------- */
+/* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
-    font-family: var(--Light);
+    font-family: var(--Livvic);   
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -369,7 +358,7 @@ main .post-content .post-title a{
 }
 
 .site-content > .sidebar .category-list .list-items a{
-    color: black;
+    color:  black;
 }
 
 .site-content .sidebar .popular-post .post-content{
@@ -383,7 +372,7 @@ main .post-content .post-title a{
 .site-content .sidebar .popular-post .post-info{
     padding: .4rem .1rem !important;
     bottom: 0rem !important;
-    left: 1rem !important;
+    left: 1.5rem !important;
     border-radius: 0rem !important;
     background: white !important;
 }
@@ -424,17 +413,15 @@ main .post-content .post-title a{
     padding: .4rem 1rem;
     border-radius: 3rem;
     margin: .4rem .6rem;
-
 }
 
 
-/* ------------------- Sidebar ----------------------- */
+/* -------x------- Sidebar -----------x----------- */
+
+/* ---------x------- Main Content -----x----- */
 
 
-/*-------X--------- Main Content --------X-------- */
-
-
-/* ----------------- Footer ---------------- */
+/* ----------------- Footer --------------------- */
 
 footer.footer{
     height: 100%;
@@ -444,7 +431,7 @@ footer.footer{
 
 footer.footer .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer.footer .container > div{
@@ -453,8 +440,7 @@ footer.footer .container > div{
     padding: 3rem .9rem;
 }
 
-/* about-us */
-footer.footer .container .about-us h2{
+footer.footer .container h2{
     color: var(--white);
 }
 
@@ -468,7 +454,7 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Light);
+    font-family: var(--Thin);
     font-size: 1rem;
     width: 74%;
 }
@@ -479,7 +465,7 @@ footer.footer .newsletter .form-element span{
     cursor: pointer;
 }
 
-footer.footer .instagram div >  img{
+footer.footer .instagram div > img{
     display: inline-block;
     width: 25%;
     height: 50%;
@@ -506,12 +492,11 @@ footer.footer .move-up span:hover{
     cursor: pointer;
 }
 
+/* ---------x------- Footer ----------x---------- */
 
-/* --------X--------- Footer --------X-------- */
+/* ------------- Viewport less then or equal to 1130px -------------- */
 
-/*            Viewport less then or equal to 1130px           */
-
-@media only screen and (mas-width: 1130){
+@media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
         left: 2rem !important;
         bottom: 1.2rem !important;
@@ -525,18 +510,20 @@ footer.footer .move-up span:hover{
     footer.footer .container{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
-/*      X      Viewport less then or equal to 1130px     X      */
+/* --------X--------- Viewport less then or equal to 1130px -------X--------- */
 
-/*            Viewport less then or equal to 750px           */
+
+/* ------------  Viewport less then or equal to 750px ------------ */
 
 @media only screen and (max-width: 750px){
-    .nav .nav-menu {
+    .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
 
-    .toggle-collapse{
+    .nav .toggle-collapse{
         display: initial;
     }
 
@@ -544,16 +531,17 @@ footer.footer .move-up span:hover{
         grid-template-columns: 100%;
     }
 
-    footer.footer .container {
+    footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
 
 
-/*      X      Viewport less then or equal to 750px     X      */
+/*        x      Viewport less then or equal to 750px       x     */
 
 
-/*            Viewport less then or equal to 520px           */
+/*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
     main .blog{
@@ -565,13 +553,18 @@ footer.footer .move-up span:hover{
     }
 
     footer.footer .container > div{
-        padding: 1rem .9rem !important;
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
     }
 
     nav .toggle-collapse{
         width: 80% !important;
-
     }
+
 }
 
-/*      X      Viewport less then or equal to 520px     X      */
+/*        x      Viewport less then or equal to 520px       x     */

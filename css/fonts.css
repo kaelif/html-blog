@@ -17,11 +17,6 @@
     src: url("../Roboto/Roboto-Bold.ttf");
 }
 
-/* font-family: Roboto-Bold */
-@font-face {
-    font-family: Bold;
-    src: url("../Roboto/Roboto-Bold.ttf");
-}
 
 /* font-family: Roboto-Black */
 @font-face {
