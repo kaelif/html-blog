@@ -442,7 +442,7 @@ footer.footer{
     position: relative;
 }
 
-footer.footer.container{
+footer.footer .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -453,6 +453,7 @@ footer.footer .container > div{
     padding: 3rem .9rem;
 }
 
+/* about-us */
 footer.footer .container .about-us h2{
     color: var(--white);
 }
@@ -475,7 +476,7 @@ footer.footer .newsletter .form-element input{
 footer.footer .newsletter .form-element span{
     background: var(--sky);
     padding: .5rem .7rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 footer.footer .instagram div >  img{
