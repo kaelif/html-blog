@@ -360,7 +360,7 @@ main .post-content .post-title a{
 
 .site-content > .sidebar .category-list .list-items{
     background: var(--sky);
-    padding: 4rem 1rem;
+    padding: .4rem 1rem;
     margin: .8rem 0;
     border-radius: 3rem;
     width: 70%;
@@ -372,7 +372,7 @@ main .post-content .post-title a{
     color: black;
 }
 
-.site-content .side-bar .popular-post .post-content{
+.site-content .sidebar .popular-post .post-content{
     padding: 1rem 0;
 }
 
@@ -393,7 +393,7 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter{
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 
 .site-content .sidebar .newsletter .form-element{
@@ -408,7 +408,7 @@ main .post-content .post-title a{
     font-size: 1rem;
 }
 
-.site-content sidebar .newsletter .form-btn{
+.site-content .sidebar .newsletter .form-btn{
     border-radius: 0;
     padding: .8rem 32%;
     margin: 1rem 0;
@@ -419,7 +419,7 @@ main .post-content .post-title a{
     padding: 5rem 0;
 }
 
-.site-content .sidebar .popular-tags .tag{
+.site-content .sidebar .popular-tags .tags .tag{
     background: var(--sky);
     padding: .4rem 1rem;
     border-radius: 3rem;
