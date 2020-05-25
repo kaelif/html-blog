@@ -285,15 +285,14 @@ main .site-content{
 
 main .post-content{
     width: 100%;
-    margin-bottom: 5rem;
 }
 
-main .site-content .post-content >  .post-image, .post-title{
+main .site-content .post-content >  .post-image .post-title{
     padding: 1rem 2rem;
     position: relative;
 }
 
-main .site-content .post-content > .post-image, .post-info{
+main .site-content .post-content > .post-image .post-info{
     background: var(--sky);
     padding: 1rem;
     position: absolute;
@@ -325,7 +324,7 @@ main .post-content .post-title a{
     font-size: 1.5rem;
 }
 
-main .site-content .post-content .post-title .post-btn{
+.site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
     background: var(--sky);
